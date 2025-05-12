@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shadi Ka Funny Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <nav>
+      <button onclick="showPage('page1')">Intro</button>
+      <button onclick="showPage('page2')">Dulha-Dulhan</button>
+      <button onclick="showPage('page3')">Nimantran</button>
+      <button onclick="showPage('page4')"> Wishes</button>
+    </nav>
+
+    <section id="page1" class="page active">
+      <h1>Shaadi Hai Behen!</h1>
+      <p>Tayaar ho jao... kharcha hone waala hai!</p>
+    </section>
+
+    <section id="page2" class="page">
+      <h2>Dulha & Dulhan</h2>
+      <p>Dulha: bkl (Jo khi khoya hua hai)</p>
+      <p>Dulhan: Shreya behen(Jo kabhi online nahi aati)</p>
+    </section>
+
+    <section id="page3" class="page">
+      <h2>Nimantran Patra</h2>
+      <p>Aapko nimantran diya jata hai is mahaan yudh mein shaamil hone ke liye!</p>
+      <p>Venue: Jaha signal aaye apka whi se online aajana.</p>
+    </section>
+
+    <section id="page4" class="page">
+      <h2>Funny Wishes</h2>
+      <p>Jeevan bhar ke liye free Wi-Fi (aur miya) Mubarak ho!</p>
+      <p>Bachelor Party ki photos delete kar dena... shaadi ke baad problems ho sakti hai!</p>
+    </section>
+  </div>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(page => {
+        page.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
