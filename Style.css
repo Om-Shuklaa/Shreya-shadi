@@ -1,0 +1,183 @@
+/* body {
+  font-family: 'Comic Sans MS', cursive;
+  background: #fff8e1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+/* .card {
+  width: 90%;
+  max-width: 500px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ffca28;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+nav button:nth-child(1) {
+  background: #fdd835; yellow
+  color: #000;
+}
+
+nav button:nth-child(2) {
+  background: #ff7043; orange
+}
+
+nav button:nth-child(3) {
+  background: #66bb6a; green
+}
+
+nav button:nth-child(4) {
+  background: #42a5f5; blue
+}
+
+.page {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.page.active {
+  display: block;
+}
+
+#page1 {
+  background: #fff9c4;
+}
+
+#page2 {
+  background: #ffe0b2;
+}
+
+#page3 {
+  background: #c8e6c9;
+}
+
+#page4 {
+  background: #bbdefb;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+h1, h2 {
+  color: #e65100;
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background: #fff8e1;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  background: #ffecb3;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav button {
+  flex: 1 1 45%;
+  margin: 5px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+
+nav button:nth-child(1) {
+  background: #fdd835;
+  color: black;
+}
+nav button:nth-child(2) {
+  background: #ff7043;
+}
+nav button:nth-child(3) {
+  background: #66bb6a;
+}
+nav button:nth-child(4) {
+  background: #42a5f5;
+}
+
+.page {
+  display: none;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.page.active {
+  display: block;
+}
+
+#page1 {
+  background: #fff9c4;
+}
+#page2 {
+  background: #ffe0b2;
+}
+#page3 {
+  background: #c8e6c9;
+}
+#page4 {
+  background: #bbdefb;
+}
+
+h1, h2 {
+  color: #e65100;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
